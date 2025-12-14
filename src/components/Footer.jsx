@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, Linkedin, Heart, Youtube} from 'lucide-react';
 import logo from '../assets/logo.png';
+import { MapPin, Home, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   const quickLinks = [
@@ -71,12 +72,20 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <p className="font-bold text-lg mb-4">Contact Info</p>
-            <ul className="space-y-2 text-muted-foreground text-sm">
-              <li>Thatagat Chauk</li>
-              <li>Amabjogai, 431517</li>
-              <li className="pt-2">9373444125</li>
-              <li>Rutujapt@gmail.com</li>
-            </ul>
+<ul className="space-y-2 text-muted-foreground text-sm">
+  <li className="flex items-center gap-2">
+    <MapPin className="text-teal-600" size={16} /> Thatagat Chauk
+  </li>
+  <li className="flex items-center gap-2">
+    <Home className="text-teal-600" size={16} /> Amabjogai, 431517
+  </li>
+  <li className="flex items-center gap-2 pt-2">
+    <Phone className="text-teal-600" size={16} /> 9373444125
+  </li>
+  <li className="flex items-center gap-2">
+    <Mail className="text-teal-600" size={16} /> Rutujapt@gmail.com
+  </li>
+</ul>
           </motion.div>
 
           <motion.div

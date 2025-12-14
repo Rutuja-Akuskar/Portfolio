@@ -7,6 +7,8 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { useToast } from './ui/use-toast';
+import phone from '../assets/phone.png';
+import contact1 from '../assets/contact1.png';
 
 const Contact = () => {
   const ref = useRef(null);
@@ -40,22 +42,45 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" ref={ref} className="py-20 bg-background overflow-hidden">
+    <section id="contact" ref={ref} className="pt-6 py-20 bg-background overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <span className="text-brand-teal font-semibold text-sm uppercase tracking-wider">Get In Touch</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-balance">
-            Book Your <span className="gradient-text">Appointment Today</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            Ready to take the first step towards a pain-free life? Reach out to us. We're here to help.
-          </p>
-        </motion.div>
+  initial={{ opacity: 0, y: 30 }}
+  animate={isInView ? { opacity: 1, y: 0 } : {}}
+  transition={{ duration: 0.6 }}
+  className="mb-16"
+>
+  <div className="flex flex-col md:flex-row items-center justify-center gap-14 md:gap-24 text-center md:text-left">
+
+    {/* ⭐ LEFT IMAGE */}
+    <img
+      src={phone}
+      alt="Contact left"
+      className="w-full max-w-[260px] h-[240px] object-contain mx-auto"
+    />
+
+    {/* ⭐ HEADING CENTER */}
+    <div>
+      <span className="text-brand-teal font-semibold text-sm uppercase tracking-wider block text-center md:text-left">
+        Get In Touch
+      </span>
+      <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-balance max-w-3xl mx-auto">
+        Book Your <span className="gradient-text">Appointment Today</span>
+      </h2>
+      <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+        Ready to take the first step towards a pain-free life? Reach out to us. We're here to help.
+      </p>
+    </div>
+
+    {/* ⭐ RIGHT IMAGE */}
+    <img
+      src={contact1}
+      alt="Contact right"
+      className="w-full max-w-[260px] h-[240px] object-contain mx-auto"
+    />
+  </div>
+</motion.div>
+
 
         <div className="grid md:grid-cols-2 gap-12">
   <motion.div

@@ -34,7 +34,9 @@ const Navbar = () => {
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Gallery', href: '/gallery' },
+    {name: 'Blogs', href: '/BlogsPage' },
     { name: 'Testimonials', href: '/testimonials' },
+    { name: 'Ethics & Practices', href: '/EthicsPractices' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -83,10 +85,10 @@ const Navbar = () => {
             ))}
             <div className="flex items-center gap-2">
               <ThemeToggle />
-              <Button onClick={handleBookNow} className="bg-brand-teal hover:bg-brand-green text-white">
+              {/* <Button onClick={handleBookNow} className="bg-brand-teal hover:bg-brand-green text-white">
                 <Phone className="w-4 h-4 mr-2" />
                 Book Now
-              </Button>
+              </Button> */}
             </div>
           </div>
 

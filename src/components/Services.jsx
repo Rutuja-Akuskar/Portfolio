@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import { Activity, Zap, Trophy, HeartPulse, Brain, Baby, ArrowRight, UserCheck } from 'lucide-react';
 import { Button } from './ui/button';
 import { useToast } from './ui/use-toast';
+import AdvancedPainMap from "./Skeleton3D";
 
 const Services = () => {
   const ref = useRef(null);

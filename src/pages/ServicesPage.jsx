@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle, MessageSquare, Activity, ShieldQuestion } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
+import Skeleton3D from "../components/Skeleton3D";
 
 const HowItWorksSection = () => {
   const steps = [
@@ -124,6 +125,7 @@ const ServicesPage = () => {
         <Services />
         <DesignCarousel />
         <HowItWorksSection />
+        <Skeleton3D />
         <ConditionsTreatedSection />
       </div>
     </PageTransition>
