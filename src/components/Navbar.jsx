@@ -33,7 +33,7 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Gallery', href: '/gallery' },
+    // { name: 'Gallery', href: '/gallery' },
     {name: 'Blogs', href: '/BlogsPage' },
     { name: 'Testimonials', href: '/testimonials' },
     { name: 'Ethics & Practices', href: '/EthicsPractices' },

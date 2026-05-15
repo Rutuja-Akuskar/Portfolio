@@ -6,7 +6,7 @@ import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
-import GalleryPage from './pages/GalleryPage';
+// import GalleryPage from './pages/GalleryPage';
 import BlogsPage from './pages/BlogsPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import EthicsPractices from './pages/EthicsPractices';
@@ -23,7 +23,7 @@ function AnimatedRoutes() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
+        {/* <Route path="/gallery" element={<GalleryPage />} /> */}
         <Route path="/BlogsPage" element={<BlogsPage />} />
         <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/EthicsPractices" element={<EthicsPractices />} />
