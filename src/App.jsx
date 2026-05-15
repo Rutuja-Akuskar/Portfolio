@@ -36,7 +36,7 @@ function AnimatedRoutes() {
 function App() {
   const [isChatOpen, setIsChatOpen] = useState(false);
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <Layout>
         <SelectionTTS /> 
         <ScrollToTop />
