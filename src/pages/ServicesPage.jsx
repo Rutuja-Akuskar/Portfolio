@@ -125,7 +125,7 @@ const ServicesPage = () => {
         <Services />
         <DesignCarousel />
         <HowItWorksSection />
-        <Skeleton3D />
+        {/* <Skeleton3D /> */}
         <ConditionsTreatedSection />
       </div>
     </PageTransition>
